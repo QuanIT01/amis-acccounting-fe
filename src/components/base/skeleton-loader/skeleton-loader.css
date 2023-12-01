@@ -1,0 +1,58 @@
+.skeleton-box {
+  display: inline-block;
+  height: 14px;
+  min-width: 14px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--gray-300);
+}
+
+/* skeleton type */
+.skeleton-box.--type-rect {
+  border-radius: 0px;
+}
+
+.skeleton-box.--type-circle {
+  border-radius: 1000px;
+}
+
+/* skeleton animation */
+.skeleton-box.--animation-fade {
+  animation: fadeLoading 1.5s linear infinite;
+}
+
+.skeleton-box.--animation-wave::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0px,
+    rgba(255, 255, 255, 0.6) 40px,
+    rgba(255, 255, 255, 0) 80px
+  );
+  transform: translateX(-100%);
+  animation: shimmer 2s ease infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fadeLoading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,130 @@
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 56px;
+  display: flex;
+}
+
+/* navbar left */
+.navbar__left {
+  width: 200px;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  background: var(--sidebar-background);
+  transition: all 0.2s ease;
+}
+
+.navbar__menu-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background: url("../../../../assets/img/Sprites.64af8f61.svg") no-repeat -424px -88px;
+  cursor: pointer;
+}
+
+.navbar__logo-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.navbar__logo {
+  flex-shrink: 0;
+  height: 36px;
+  width: 36px;
+  background: url("../../../../assets/favicon.ico") no-repeat center / contain;
+  cursor: pointer;
+}
+
+.navbar__logo-text {
+  color: var(--white);
+  /* text-transform: uppercase; */
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 8px;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* navbar right */
+.navbar__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__title-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__sidebar-toggle {
+  color: var(--secondary-text-color);
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.navbar__title {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.navbar__title-toggle {
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+.navbar__controls {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.navbar__button {
+  cursor: pointer;
+  color: var(--secondary-text-color);
+  margin-right: 24px;
+}
+
+.navbar__avatar-wrap {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar__avatar {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.navbar__avatar-name {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.navbar__avatar-toggle {
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+/* compact mode */
+.navbar.--compact .navbar__left {
+  width: 72px;
+  padding-left: 24px;
+}
+.navbar.--compact .navbar__logo-container {
+  display: none;
+}

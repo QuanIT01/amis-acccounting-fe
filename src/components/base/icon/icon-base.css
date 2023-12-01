@@ -1,0 +1,25 @@
+.ms-icon--24 {
+  flex-shrink: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: currentColor;
+}
+.ms-icon--20 {
+  flex-shrink: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: currentColor;
+}
+.ms-icon--16 {
+  flex-shrink: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: currentColor;
+}
+
+.ms-icon--no-color {
+  background-color: unset;
+}

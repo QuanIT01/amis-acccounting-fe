@@ -1,0 +1,208 @@
+.ms-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 4px;
+  padding: 0 16px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+  text-decoration: none;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.ms-btn:disabled {
+  opacity: 56%;
+  cursor: default;
+}
+
+.ms-btn__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* button link */
+.ms-btn--link {
+  min-width: auto;
+  background: transparent;
+  color: var(--primary-color-500);
+  padding: 0;
+}
+
+.ms-btn--link:hover {
+  color: var(--primary-color-400);
+}
+
+.ms-btn--link:focus {
+  color: var(--primary-color-400);
+}
+
+.ms-btn--link:active {
+  color: var(--primary-color-700);
+}
+
+/* button icon */
+.ms-btn--icon {
+  min-width: 10px;
+  padding: 0px 8px;
+}
+
+.ms-btn__icon {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.ms-btn--icon .ms-btn__icon {
+  margin-right: 0;
+}
+
+.ms-btn--with-icon {
+  padding-left: 12px;
+}
+
+/* primary button */
+.ms-btn--primary {
+  background: var(--primary-color-500);
+  border-color: var(--primary-color-500);
+  color: var(--white);
+}
+
+.ms-btn--primary:hover {
+  background: var(--primary-color-400);
+  border-color: var(--primary-color-400);
+}
+
+.ms-btn--primary:focus {
+  background: var(--primary-color-400);
+  border-color: var(--primary-color-400);
+}
+
+.ms-btn--primary:active {
+  background: var(--primary-color-700);
+  border-color: var(--primary-color-700);
+}
+
+/* secondary button */
+.ms-btn--secondary {
+  background: var(--white);
+  border-color: var(--border-color);
+  color: var(--primary-text-color);
+}
+
+.ms-btn--secondary:hover {
+  background: var(--gray-100);
+}
+
+.ms-btn--secondary:focus {
+  background: var(--gray-100);
+}
+
+.ms-btn--secondary:active {
+  background: var(--gray-200);
+}
+
+/* inverse button */
+.ms-btn--inverse {
+  background: var(--primary-color-50);
+  border-color: var(--primary-color-500);
+  color: var(--primary-color-500);
+}
+
+.ms-btn--inverse:hover {
+  color: var(--primary-color-400);
+}
+
+.ms-btn--inverse:focus {
+  color: var(--primary-color-400);
+}
+
+.ms-btn--inverse:active {
+  color: var(--white);
+  background: var(--primary-color-700);
+  border-color: var(--primary-color-700);
+}
+
+/* danger button */
+.ms-btn--danger {
+  background: var(--red-500);
+  border-color: var(--red-500);
+  color: var(--white);
+}
+
+.ms-btn--danger:hover {
+  background: var(--red-400);
+  border-color: var(--red-400);
+}
+
+.ms-btn--danger:focus {
+  background: var(--red-400);
+  border-color: var(--red-400);
+}
+
+.ms-btn--danger:active {
+  background: var(--red-700);
+  border-color: var(--red-700);
+}
+
+/* button group */
+.ms-btn-group {
+  display: flex;
+}
+
+.ms-btn-group .ms-btn {
+  margin-left: 0;
+  border-radius: 0;
+}
+
+.ms-btn-group > :not(.ms-btn:first-child) {
+  border-left-color: var(--white) !important;
+}
+
+.ms-btn-group .ms-btn:first-child {
+  border-radius: 4px 0 0 4px;
+}
+.ms-btn-group .ms-btn:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.ms-btn-group .ms-btn--icon {
+  padding: 0 12px !important;
+}
+
+/* button dropdown container */
+.ms-btn__dropdown {
+  position: absolute;
+  display: none;
+  z-index: 6;
+}
+
+.ms-btn__dropdown.--active {
+  display: block;
+}
+
+.ms-btn__dropdown.--pos-bottom-right {
+  top: calc(100% + 4px);
+  right: 0;
+}
+
+.ms-btn__dropdown.--pos-bottom-left {
+  top: calc(100% + 1px);
+  right: 0;
+}
+
+.ms-btn.ms-btn--has-dropdown.ms-btn--primary:active,
+.ms-btn.ms-btn--has-dropdown.ms-btn--primary:hover,
+.ms-btn.ms-btn--has-dropdown.ms-btn--primary:focus {
+  background: var(--primary-color-500);
+  border-color: var(--primary-color-500);
+}

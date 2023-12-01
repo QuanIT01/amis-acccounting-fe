@@ -1,0 +1,103 @@
+.ms-table-customize {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  min-width: 312px;
+  /* min-height: 600px;
+  max-height: 600px; */
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow-medium);
+  z-index: 5;
+  user-select: none;
+
+  animation: fadeInRight 0.2s ease;
+}
+
+/* header */
+.ms-table-customize__header {
+  padding: 16px 16px;
+}
+
+.ms-table-customize__header-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.ms-table-customize__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+/* search */
+.ms-table-customize__search {
+  padding: 0 16px;
+}
+
+/* content */
+.ms-table-customize__content {
+  flex: 1;
+  margin-top: 12px;
+  padding-bottom: 12px;
+  overflow-y: auto;
+}
+
+.ms-table-customize__menu {
+  list-style: none;
+}
+
+.ms-table-customize__menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 16px;
+  transition: background 0.2s ease;
+}
+
+.ms-table-customize__menu-item:hover {
+  background-color: var(--primary-color-50);
+}
+
+.ms-table-customize__menu-table-name-wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.ms-table-customize__menu-item-actions {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.ms-table-customize__item-action {
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ms-table-customize__item-action:hover {
+  color: var(--primary-text-color);
+}
+
+.ms-table-customize__menu-item.--sticky .--pin-icon {
+  color: var(--primary-color-500);
+}
+
+/* footer */
+.ms-table-customize__footer {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 12px;
+  padding: 10px 16px;
+  background-color: var(--gray-100);
+  border-radius: 0 0 4px 4px;
+  border-top: 1px solid var(--border-color);
+}

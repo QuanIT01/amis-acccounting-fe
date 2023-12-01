@@ -1,0 +1,16 @@
+.ms-divider {
+  border-top: 1px solid var(--border-color);
+}
+
+.ms-divider.--gutter-8 {
+  margin: 8px 0;
+}
+.ms-divider.--gutter-16 {
+  margin: 16px 0;
+}
+.ms-divider.--gutter-24 {
+  margin: 24px 0;
+}
+.ms-divider.--gutter-32 {
+  margin: 32px 0;
+}

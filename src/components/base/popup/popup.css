@@ -1,0 +1,80 @@
+.ms-popup-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 11;
+
+  animation: fadeIn 0.3s ease;
+}
+
+.ms-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  animation: fadeInUp 0.3s ease;
+}
+
+.ms-popup__header {
+  display: flex;
+  align-items: center;
+  padding: 24px 24px 0;
+}
+
+.ms-popup__header-controls {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  column-gap: 16px;
+}
+
+.ms-popup__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+
+.ms-popup__close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ms-popup__content {
+  padding: 24px;
+  overflow-y: visible;
+}
+
+.ms-popup__desc {
+  font-size: 14px;
+  color: var(--primary-text-color);
+  padding-bottom: 16px;
+}
+
+.ms-popup__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background-color: var(--gray-100);
+}
+
+.ms-popup__controls-left,
+.ms-popup__controls-right {
+  display: flex;
+  column-gap: 8px;
+}
